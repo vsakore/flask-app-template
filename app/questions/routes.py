@@ -3,6 +3,7 @@ from app.questions import bp
 from app.models.question import Question
 from app.extensions import db
 
+
 @bp.route('/', methods=('GET', 'POST'))
 def index():
     questions = Question.query.all()
